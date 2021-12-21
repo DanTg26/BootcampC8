@@ -1,0 +1,30 @@
+.Encabezados{
+
+    font-size: 60px;
+    color: black;
+
+}
+
+p {
+    color:brown;
+    
+}
+
+.span {
+    background-color: darkblue;
+}
+
+.span2 {
+
+    color: yellowgreen;
+}
+
+body {
+    background-color: wheat;
+}
+
+.rojo{
+
+    color: red;
+    font-family: 'Courier New', Courier, monospace
+}

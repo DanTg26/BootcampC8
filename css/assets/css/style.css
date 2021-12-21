@@ -1,0 +1,38 @@
+
+/* Asi se comenta en CSS
+*/
+/* fon size es para el tamano de la fuente, se pueden utilizar
+centimetros, pixeles, pulgadas: px, %, em, rm */
+
+#texto {
+    color: pink;
+    Background-color: red;
+    font-size: 26px;
+    font-style: italic;
+}
+
+.encabezado {
+    font-size: 72px;
+    color: darkcyan;
+    background-color: rgb(194, 240, 28);
+    text-align: center;
+    text-transform:capitalize;}
+
+body {
+    background-color: rgb(156, 163, 167);
+}
+.texto {
+    color: white;
+    background-color: black;
+}
+
+p {
+
+    color: rgb(155, 187, 156);
+    background-color:blue;
+}
+
+p {
+    color: yellow;
+    background-color: rebeccapurple;
+}

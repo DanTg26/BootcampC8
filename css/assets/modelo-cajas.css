@@ -1,0 +1,44 @@
+
+
+/* body {
+   /*  background-image: url(https://cdn.custom-cursor.com/collections/129/cover-pokemon-preview.png);
+    background-repeat: no-repeat ; */
+   
+    /*background-size: cover;*/
+
+
+.title{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.subtitle {
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.caja {
+    width: 300px;
+    height: 300px;
+   /*  margin: 20px; */
+    margin-bottom: 20px;
+    margin: 20px;
+    font-size: 50px;
+    padding: 20px;  /* margen interior */
+    border-radius: 30px; /* curvear bordes */
+}
+
+.rojo{
+   /*  background-color: red; */
+   border: 5px solid red;
+}
+
+.verde{
+   /*  background-color: seagreen; */
+   border: 5px solid green;
+}
+
+.azul {
+    /* background-color: royalblue; */
+    border: 5px solid blue;
+}
