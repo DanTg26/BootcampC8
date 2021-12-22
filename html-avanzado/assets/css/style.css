@@ -1,0 +1,11 @@
+.formulario {
+    border: 2px solid rgb(47, 28, 94);
+    border-radius: 3px;
+}
+
+.password{
+    background-color: hotpink;
+}
+#password{
+    border: 3px dashed blue
+}

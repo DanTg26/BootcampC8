@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+
+    <form>
+
+        <input type="text"/> <!-- Crea un recuadro -->
+        <input type="date"/> <!-- Crea un recuadro para poner las fechas -->
+        <input type="color"/> <!-- Crea un recuadro para seleccionar colores -->
+        <input type="password"/> <!-- Crea un recuadro para crear contrasena -->
+        <input type="file"/>    <!-- Crea un recuadro para seleccionar un archivo -->
+        <input type="checkbox"/> <!-- Crea un cuadro donde se pone una palomita azul -->
+        <input type="radio"/>  <!-- Crea un circulo de selección que se colorea de azul -->
+        <input type="submit"/>  <!-- Crea el boton de enviar este boton simepre debe ir por dentro del formulario que estamos utilizando-->
+        <button>Hola</button> <!-- Crea un boton que se puede utilizar y personalizar -->
+       <!--  <fieldset></fieldset> Es opcional y sirve para agrupar en un bloque los formularios -->
+     
+     </form>
+     <h1>Formulario</h1>
+
+     <form class="formulario">
+         <div class="nombre">
+            <label for="Nombre" >Nombre</label>
+            <input type="text" id="Nombre" 
+            name="Nombre" 
+            placeholder="Escribe tu nombre"/>
+         </div>
+
+         <br>
+
+         <div class="apellido">
+            <label for="apellido">Apellido</label>
+            <input type="text" 
+            name="apellido" 
+            placeholder="Escribe tu apellido"/>
+
+
+         </div>
+
+         <br>
+
+
+         <div class="password">
+             <label for="password">Contrasena</label>
+             <input type="password" 
+             id="password" 
+             placeholder="Escribe tu contrasena"/>
+            
+        </div>
+
+        <div class="correo">
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" placeholder="Escribe tu correo" required/>
+
+
+        </div>
+
+        <br>
+
+        <div class="enviar">
+
+            <input type="submit" value="Hazlo ya"/>
+
+        </div>
+    
+    </form>
+    <br>
+
+    <form >
+        <fieldset>
+            <legend>Ingresa el numero</legend>
+            <label for="numero">Numero</label>
+            <input id="numero"type="number" name="numero" min="40" max="60" /> <!-- el min y el max pone limitantes a las opciones -->
+
+            <label for="rango">Rango</label>
+            <input type="range" name="rango" id="rango"/> <!-- inserta una barra de rango -->
+
+
+
+        </fieldset>
+     </form>
+    
+    
+</body>
+</html>
