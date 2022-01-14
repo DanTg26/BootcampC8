@@ -81,10 +81,58 @@ else if(horaUsuario >= 0 && <=5) {
     } */
 
 
-
+    let dia = 12
 
 
      switch(dia) {
          case 0:
+                console.log("Domingo");
+             break;
+        case 1: 
+                console.log("Lunes");
+             break;
+        case 2:
+                console.log("Martes");
+            break;
+        case 3:
+                console.log("Miercore");
+            break;
+        case 3:
+                console.log("Jueves");
+            break;
+        case 5:
+                console.log("Viernes");
+            break;
+        case 6:
+                console.log("Sabado");
+            break;
+        default:
+                console.log("No hay, no existe (patrocinado por silka medic)");
+            break;    
              
+     }
+
+     let cuponDescuento = "Bronc"
+     let descuento;
+
+     switch(cuponDescuento) {
+         case "Bronce":
+         console.log(5);
+         break;
+
+         case "Plata":
+         console.log(10);
+         break;
+
+         case "Oro":
+         console.log(15);
+         break;
+
+         case "Oro":
+         console.log(15);
+         break;
+
+         default:
+        console.log("Cupón no válido");
+
      }
