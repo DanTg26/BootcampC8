@@ -1,99 +1,59 @@
 
-let numeros = [1, 2, 13, 23, 532, 328, 123, 6865, 812];
+let arr1 = [1,2,3,4,5,6,7,8,15,16,17,9,10,12,13,14];
 
- /* numeros.forEach(function (numero){
-document.write(numero + ', ' + );
-}); */
+/* arr1.forEach(function (ele){
+    document.write(ele + '<br>')
+}) */
 
-// El map crea un arreglo independiente a partir de otro arreglo
+/* arr1.forEach((ele,index) => {
+    if (index != arr1.length - 1){
+        document.write(ele + ',')  
+    }
+    else{
+        document.write(ele)
+    }
+}) */
 
-/* let numeros2 = numeros.map(function(elemento) {
-return elemento;
-});
+/* arr1.forEach((ele,index) => {
+    if (index % 2 == 0){
+        document.write(ele + ',')  
+    }
+}) */
 
-document.write('<br/>' + numeros2 + '<br/>');
+/* arr1.forEach((ele,index) => {
+    document.write(ele + ',')  
+})
+let arr2 = arr1.map((ele) => ele);
+document.write('<br>' + arr2) */
 
-let numeros3 = numeros.map(function(elemento) {
-    return elemento * 2;
-    });
-    
-    document.write('<br/>' + numeros3 + '<br/>');
-     */
+let frutas = ['Mango', 'Uva', 'Piña', 'Mandarina', 'Aguacate']
+let frutas2 = frutas.map(ele => ele)
 
-    /* Includes */
-
-   /*  document.write('<br/>'+ numeros.includes(328)); */
-
-   /* Filter: filtra los elementos que cumplen con la condicion */
-
-    let numerosPares = numeros.filter((elemento) => {
-       /*if (elemento % 2 == 0); {
-           return true;
-        } else {
-            return true;
-        }
-       
-   }); */
-
-   if(elemento > 500 ) {
-       return true;}});
-   
-
-   document.write ('<br/>' + numerosPares);
-
-   let frutas = ['mango', 'uva', 'pinnia', 'mandarina', 'manzana', 'aguacate' ]
-
-   let frutasfiltro = frutas.filter((fruta) => {
-       /* if(fruta.includes('i') == true ) {
-           return true; */
-           
-           return fruta.toLowerCase().includes('m');
+document.write(`<br> ${frutas} <br>`);
+document.write(`<br> ${frutas2} <br>`);
 
 
-       
+frutas.push('pera')
 
-   });
+document.write(`<br> ${frutas} <br>`);
+document.write(`<br> ${frutas2} <br>`);
 
-   /* Sort ordena los elementos  */
 
-   document.write('<br>' + frutasfiltro + '<br>' );
-
-   let otrosNumeros = [9, 2, 3, 5, 1, 4, 8, 6, 7]
-
-   /* document.write('<br>' + otrosNumeros.sort() + '<br>'); */
-
-   /* Reverse invierte el orden de los eleentos de un arreglo */
-
-   document.write('<br>' + numeros.reverse() + '<br>')
-
-   /* Find */
-
-   let frutaEncontrada = frutas.find((elemento) => {
-       return elemento.toLowerCase().includes('ma');
-   });
-
-   document.write('<br>' + frutaEncontrada + "<br>");
+/* let numPares = arr1.filter((num) => (num % 2 == true) ? true : false); */
+let numPares = arr1.filter((num) => (num % 2));
+document.write(`Tiene los siguientes numero pares: ${numPares} <br>`)
 
 
 
-
-   let numeros2 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200]
-   let suma = 0;
-   
-
-   document.write('Tu arreglo es:' + numeros2 + '<br>' )
+const letra = 'm'
+let frutasFiltro = frutas.filter((fru) => fru.toLowerCase().includes(letra) )
+document.write(`Las siguientes frutas contienen la letra ${letra}: ${frutasFiltro} <br>`)
 
 
-  numeros2.forEach(function(numero) {
-         return suma += numero
-  });
+let ordenado = arr1.sort((a,b) => a - b)
+document.write(ordenado + '<br>')
+document.write(ordenado.reverse()+ '<br>')
 
- 
-   document.write('<br>' + 'El resultado de la suma de los elementos del arreglo es: ' + suma);
 
-   let promedio = suma / numeros2.length;
-
-   document.write('<br>'+ 'El promedio es: ' + promedio);
-
-   
-   
+let frutaEncontrada = frutas.find((el) => el.toLowerCase().includes('ma'))
+document.write(frutaEncontrada + '<br>')
